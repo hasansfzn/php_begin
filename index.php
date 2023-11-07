@@ -9,4 +9,8 @@ function dd($value) {
     die();
 }
 
+function activeURL($value) {
+    return ($_SERVER['REQUEST_URI']) === $value;
+}
+
 require 'views/index.view.php';
